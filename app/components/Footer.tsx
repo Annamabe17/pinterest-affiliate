@@ -72,10 +72,16 @@ export default function Footer() {
               Info
             </h4>
             <ul className="space-y-3 text-sm">
-              {["Über mich", "Datenschutz", "Impressum", "Affiliate-Hinweis", "Kontakt"].map((l) => (
-                <li key={l}>
-                  <a href="#" className="transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.5)" }}>
-                    {l}
+              {[
+                { label: "Über mich", href: "#about" },
+                { label: "Datenschutz", href: "/datenschutz" },
+                { label: "Impressum", href: "/impressum" },
+                { label: "Affiliate-Hinweis", href: "/affiliate-hinweis" },
+                { label: "Kontakt", href: "mailto:business@lumina-vl.com" },
+              ].map((l) => (
+                <li key={l.label}>
+                  <a href={l.href} className="transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.5)" }}>
+                    {l.label}
                   </a>
                 </li>
               ))}

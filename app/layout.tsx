@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import CookieBanner from "./components/CookieBanner";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,7 +34,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="min-h-screen flex flex-col">{children}</body>
+      <body className="min-h-screen flex flex-col">
+        {children}
+        <CookieBanner />
+      </body>
     </html>
   );
 }
