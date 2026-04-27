@@ -58,7 +58,9 @@ export default function PinterestCTA() {
         </div>
 
         <a
-          href="#"
+          href="https://de.pinterest.com/lumina0404/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-10 py-4 rounded-full font-semibold text-white text-base transition-all duration-200 hover:opacity-90 hover:shadow-xl"
           style={{
             background: "linear-gradient(135deg, #C4838A 0%, #E05A6E 100%)",

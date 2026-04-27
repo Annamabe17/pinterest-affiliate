@@ -26,7 +26,9 @@ export default function Footer() {
             <div className="flex gap-3">
               {/* Pinterest */}
               <a
-                href="#"
+                href="https://de.pinterest.com/lumina0404/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full flex items-center justify-center transition-all duration-200 hover:opacity-80"
                 style={{ background: "rgba(255,255,255,0.08)" }}
                 aria-label="Pinterest"

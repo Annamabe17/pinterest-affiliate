@@ -56,7 +56,9 @@ export default function Navbar() {
         {/* Pinterest CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="#"
+            href="https://de.pinterest.com/lumina0404/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200"
             style={{
               background: "linear-gradient(135deg, #C4838A, #C9A96E)",
@@ -104,7 +106,9 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#"
+              href="https://de.pinterest.com/lumina0404/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-2 flex items-center justify-center gap-2 px-4 py-3 rounded-full text-sm font-medium"
               style={{
                 background: "linear-gradient(135deg, #C4838A, #C9A96E)",
