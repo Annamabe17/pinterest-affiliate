@@ -1,6 +1,9 @@
+import ProductImageCarousel from "./ProductImageCarousel";
+
 interface Product {
   id: number;
   emoji: string;
+  images?: string[];     // Optional: Array von Amazon CDN Bild-URLs (Karussell)
   badge?: string;
   badgeType?: "bestseller" | "new" | "love";
   name: string;
@@ -27,12 +30,12 @@ export default function ProductCard({ product }: { product: Product }) {
     >
       {/* Image area */}
       <div
-        className="relative h-52 flex items-center justify-center text-6xl"
+        className="relative h-52 flex items-center justify-center overflow-hidden"
         style={{ background: product.gradient }}
       >
         {product.badge && (
           <span
-            className="absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full tracking-wide uppercase"
+            className="absolute top-3 left-3 z-10 text-xs font-bold px-3 py-1 rounded-full tracking-wide uppercase"
             style={{
               background: badgeColors[product.badgeType ?? "love"].bg,
               color:      badgeColors[product.badgeType ?? "love"].text,
@@ -41,7 +44,11 @@ export default function ProductCard({ product }: { product: Product }) {
             {product.badge}
           </span>
         )}
-        <span>{product.emoji}</span>
+        {product.images && product.images.length > 0 ? (
+          <ProductImageCarousel images={product.images} alt={product.name} />
+        ) : (
+          <span className="text-6xl">{product.emoji}</span>
+        )}
       </div>
 
       {/* Content */}

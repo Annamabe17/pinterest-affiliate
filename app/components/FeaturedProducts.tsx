@@ -4,6 +4,13 @@ const beautyProducts: Product[] = [
   {
     id: 1,
     emoji: "☀️",
+    images: [
+      "https://m.media-amazon.com/images/I/6166ORRIHbL._SL1280_.jpg",
+      "https://m.media-amazon.com/images/I/51ubxqzNGIL._SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/610IgxQeWyL._SL1280_.jpg",
+      "https://m.media-amazon.com/images/I/712oAAov1ML._SL1280_.jpg",
+      "https://m.media-amazon.com/images/I/61KZjEozd3L._SL1280_.jpg",
+    ],
     badge: "Amazons Tipp",
     badgeType: "bestseller",
     name: "Nivea Sun Primer 2in1 UV-Serum LSF 50+",
@@ -19,6 +26,18 @@ const beautyProducts: Product[] = [
   {
     id: 2,
     emoji: "💦",
+    images: [
+      "https://m.media-amazon.com/images/I/51+S2bui9tL._SL1080_.jpg",
+      "https://m.media-amazon.com/images/I/619hADFxF7L._SL1080_.jpg",
+      "https://m.media-amazon.com/images/I/61tMuZ2Ct9L._SL1080_.jpg",
+      "https://m.media-amazon.com/images/I/61mriolZQoL._SL1080_.jpg",
+      "https://m.media-amazon.com/images/I/61Bt0PVSUQL._SL1080_.jpg",
+      "https://m.media-amazon.com/images/I/61OJuXhfJWL._SL1080_.jpg",
+      "https://m.media-amazon.com/images/I/81wIQMgTbWL._SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61jRvJZDb9L._SL1080_.jpg",
+      "https://m.media-amazon.com/images/I/61RO+wHzkdL._SL1080_.jpg",
+      "https://m.media-amazon.com/images/I/61-FahlciPL._SL1080_.jpg",
+    ],
     badge: "Bestseller",
     badgeType: "love",
     name: "d'alba Italian White Truffle First Spray Serum",
