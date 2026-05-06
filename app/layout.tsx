@@ -25,6 +25,10 @@ export const metadata: Metadata = {
     description: "Hand-curated beauty & lifestyle products, all on Amazon.",
     type: "website",
   },
+  other: {
+    // Pinterest Domain Verification
+    "p:domain_verify": "b998b08304753589644fb978cf927e73",
+  },
 };
 
 export default function RootLayout({
