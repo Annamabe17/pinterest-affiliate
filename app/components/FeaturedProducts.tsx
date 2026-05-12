@@ -84,6 +84,30 @@ const beautyProducts: Product[] = [
 
 const lifestyleProducts: Product[] = [
   {
+    id: 7,
+    emoji: "📒",
+    images: [
+      "https://m.media-amazon.com/images/I/61XRfhFUWUL._SL1499_.jpg",
+      "https://m.media-amazon.com/images/I/51stmCFzXnL.jpg",
+      "https://m.media-amazon.com/images/S/aplus-media-library-service-media/0d862cb3-ca33-47fc-8b4b-e15343f1ab54.__CR0,0,970,600_PT0_SX970_V1___.png",
+      "https://m.media-amazon.com/images/S/aplus-media-library-service-media/cccd292f-ebf7-4331-b2df-f96311a09f24.__CR0,0,970,600_PT0_SX970_V1___.png",
+      "https://m.media-amazon.com/images/S/aplus-media-library-service-media/5e5c565e-626e-4f65-bbe5-bf30519e6cef.__CR0,0,970,600_PT0_SX970_V1___.png",
+      "https://m.media-amazon.com/images/S/aplus-media-library-service-media/1b06cb7f-1c4a-4ba7-97a9-ab758ff75b7c.__CR0,0,970,600_PT0_SX970_V1___.png",
+      "https://m.media-amazon.com/images/S/aplus-media-library-service-media/bf98c8c3-50bf-4dc7-a8a4-b5f390cf5589.__CR0,0,970,600_PT0_SX970_V1___.png",
+    ],
+    badge: "5 Sterne",
+    badgeType: "love",
+    name: "Finanzplaner für junge Erwachsene – Geschenk zum 18. Geburtstag",
+    category: "Finanzen & Planung",
+    description:
+      "12-Monats-Haushaltsbuch speziell für den Start ins Erwachsenenleben — Budget planen, Ausgaben tracken und Geld verstehen mit System. Perfektes Geschenk zum 18. Geburtstag.",
+    price: "€13,99",
+    rating: 5,
+    reviews: 3,
+    gradient: "linear-gradient(135deg, #C8DDD4 0%, #E4F0EC 100%)",
+    href: "https://amzn.to/4dh9eCD",
+  },
+  {
     id: 5,
     emoji: "🎙️",
     badge: "Amazons Tipp",
@@ -166,7 +190,7 @@ export default function FeaturedProducts() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {lifestyleProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
